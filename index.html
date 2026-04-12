@@ -272,7 +272,7 @@ img{max-width:100%;display:block}
 
 <header class="header" id="header">
 <div class="header__inner">
-<a class="header__logo" onclick="navigate('/')">Addis</a>
+<a class="header__logo" onclick="navigate('/')" style="display:flex;align-items:center;gap:12px;cursor:pointer"><img src="images/logo.png" alt="Addis" style="width:36px;height:36px;object-fit:contain"><span>Addis</span></a>
 <nav class="header__nav" aria-label="Основная навигация">
 <ul class="header__nav-list">
 <li><a class="header__nav-link" onclick="navigate('business')">Для бизнеса</a></li>
@@ -858,7 +858,7 @@ img{max-width:100%;display:block}
 <footer class="footer">
 <div class="container" style="max-width:1520px">
 <div class="footer__grid">
-<div class="footer__brand"><div class="footer__logo">Addis</div><p class="footer__desc">Specialty и fine commercial кофе для бизнеса. Обжарка, поставки, обучение, поддержка.</p></div>
+<div class="footer__brand"><div class="footer__logo" style="display:flex;align-items:center;gap:12px"><img src="images/logo.png" alt="Addis" style="width:36px;height:36px;object-fit:contain"><span>Addis</span></div><p class="footer__desc">Specialty и fine commercial кофе для бизнеса. Обжарка, поставки, обучение, поддержка.</p></div>
 <div><div class="footer__heading">Каталог</div><div class="footer__links"><span class="footer__link" onclick="navigate('catalog')">Все позиции</span><span class="footer__link" onclick="navigate('catalog')">Эспрессо-бленды</span><span class="footer__link" onclick="navigate('catalog')">Моносорта</span><span class="footer__link" onclick="navigate('catalog')">Сезонные лоты</span><span class="footer__link" onclick="navigate('catalog')">Дрип-пакеты</span></div></div>
 <div><div class="footer__heading">Бизнес</div><div class="footer__links"><span class="footer__link" onclick="navigate('business')">Для HoReCa</span><span class="footer__link" onclick="navigate('solutions')">Решения</span><span class="footer__link" onclick="navigate('training')">Обучение</span><span class="footer__link" onclick="navigate('production')">Производство</span><span class="footer__link" onclick="navigate('cases')">Кейсы</span><span class="footer__link" onclick="navigate('price-request')">Получить прайс</span></div></div>
 <div><div class="footer__heading">Компания</div><div class="footer__links"><span class="footer__link" onclick="navigate('about')">О бренде</span><span class="footer__link" onclick="navigate('journal')">Журнал</span><span class="footer__link" onclick="navigate('faq')">FAQ</span><span class="footer__link" onclick="navigate('contacts')">Контакты</span></div></div>
@@ -971,7 +971,7 @@ var filText=(p.category==='filter'||p.category==='seasonal')?'Отличный �
 
 var html='';
 html+='<div class="section"><div class="container"><div class="pdp-layout">';
-html+='<div class="pdp-image" style="background:linear-gradient(135deg,'+p.c1+','+p.c2+')">'+makeBag(p,true)+'</div>';
+html+='<div class="pdp-image" style="background:linear-gradient(135deg,'+p.c1+','+p.c2+');display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden"><img src="images/logo.png" style="width:40%;max-width:160px;opacity:0.12;position:absolute" alt=""><div style="z-index:1">'+makeBag(p,true)+'</div></div>';
 html+='<div class="pdp-info">';
 html+='<div style="margin-bottom:16px">'+badges+'</div>';
 html+='<h1 class="pdp-info__title">'+p.name+'</h1>';
