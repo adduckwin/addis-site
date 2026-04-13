@@ -943,7 +943,7 @@ var sh=lg?'65%':'75%';
 var fs=lg?'80px':'36px';
 var ns=lg?'14px':'11px';
 var sn=p.name.split(' ').slice(0,2).join(' ');
-return '<div style="width:'+sw+';height:'+sh+';border-radius:8px;background:linear-gradient(135deg,'+p.c1+','+p.c2+');display:flex;flex-direction:column;align-items:center;justify-content:center;box-shadow:0 4px 16px rgba(0,0,0,0.15)"><div style="font-family:'Circe',sans-serif;font-size:'+fs+';color:rgba(255,255,255,0.8);font-weight:700">A</div><div style="font-size:'+ns+';color:rgba(255,255,255,0.8);margin-top:4px;text-align:center;padding:0 8px">'+sn+'</div></div>';
+return '<div style="width:'+sw+';height:'+sh+';border-radius:8px;background:linear-gradient(135deg,'+p.c1+','+p.c2+');display:flex;flex-direction:column;align-items:center;justify-content:center;box-shadow:0 4px 16px rgba(0,0,0,0.15)"><div style="font-family:\"Circe\",sans-serif;font-size:'+fs+';color:rgba(255,255,255,0.8);font-weight:700">A</div><div style="font-size:'+ns+';color:rgba(255,255,255,0.8);margin-top:4px;text-align:center;padding:0 8px">'+sn+'</div></div>';
 }
 
 function renderProductCard(p){
@@ -990,7 +990,7 @@ html+='<div class="pdp-info">';
 html+='<div style="margin-bottom:16px">'+badges+'</div>';
 html+='<h1 class="pdp-info__title">'+p.name+'</h1>';
 html+='<div class="pdp-info__subtitle">'+p.type+(p.varieties?' · '+p.varieties:'')+'</div>';
-if(p.qScore)html+='<div style="display:inline-flex;align-items:center;gap:8px;padding:8px 16px;background:#F5F5F5;border-radius:8px;margin-bottom:16px"><span style="font-size:12px;color:#777777;text-transform:uppercase;letter-spacing:0.05em">Q Score</span><span style="font-family:'Circe',sans-serif;font-size:24px;font-weight:700;color:#2C1810">'+p.qScore+(p.qMod||'')+'</span></div>';
+if(p.qScore)html+='<div style="display:inline-flex;align-items:center;gap:8px;padding:8px 16px;background:#F5F5F5;border-radius:8px;margin-bottom:16px"><span style="font-size:12px;color:#777777;text-transform:uppercase;letter-spacing:0.05em">Q Score</span><span style="font-family:"Circe",sans-serif;font-size:24px;font-weight:700;color:#2C1810">'+p.qScore+(p.qMod||'')+'</span></div>';
 html+='<div class="pdp-facts">';
 html+='<div><div class="pdp-fact__label">Происхождение</div><div class="pdp-fact__value">'+p.origin+'</div></div>';
 html+='<div><div class="pdp-fact__label">Обработка</div><div class="pdp-fact__value">'+p.process+'</div></div>';
